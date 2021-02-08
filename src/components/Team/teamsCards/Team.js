@@ -30,6 +30,7 @@ export class Team extends Component {
             team={this.state.team}
             getTeam={this.getTeam}
             member={member}
+            key={member.id}
           />
         ))}
       </Row>
