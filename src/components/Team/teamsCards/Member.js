@@ -36,7 +36,7 @@ export default class Member extends Component {
           <Card.Img variant="top" src="holder.js/100px180">
           </Card.Img>
           */}
-          <Canva />
+          <Canva colour={member.colour}/>
           <Card.Body>
             <Card.Title>{member.name}</Card.Title>
             <Card.Text>
