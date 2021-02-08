@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Col, Card, Button, Alert } from "react-bootstrap";
 import ModalMember from "./ModalMember";
 import Canva from "./Canva";
+import "../teamStyle.css";
 export default class Member extends Component {
   constructor(props) {
     super(props);
@@ -31,12 +32,8 @@ export default class Member extends Component {
         lg={4}
         className="d-flex justify-content-center align-items-center p-3"
       >
-        <Card style={{ width: 18 + "em" }}>
-          {/*
-          <Card.Img variant="top" src="holder.js/100px180">
-          </Card.Img>
-          */}
-          <Canva colour={member.colour}/>
+        <Card style={{ width: 18 + "em" }} className="cards-team">
+          <Canva colour={member.colour} />
           <Card.Body>
             <Card.Title>{member.name}</Card.Title>
             <Card.Text>
