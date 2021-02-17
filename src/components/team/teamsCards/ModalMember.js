@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Modal, Row, Col, Image, Form } from "react-bootstrap";
+import { Button, Modal, Row, Col, Form } from "react-bootstrap";
 export default class ModalMember extends Component {
   constructor(props) {
     super(props);

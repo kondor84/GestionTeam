@@ -17,7 +17,7 @@ const ProfileForm = (props) => {
       <Form.Group className="my-4" controlId="formName">
         <Form.Label className="justify-content-start">Nombre:</Form.Label>
         <Form.Control
-          className="border border-primary rounded-left"
+          className="border border-success rounded-left"
           type="text"
           placeholder="Ingrese su nombre"
           name="name"
@@ -28,7 +28,7 @@ const ProfileForm = (props) => {
       <Form.Group className="my-4" controlId="formName">
         <Form.Label className="justify-content-start">Apellido:</Form.Label>
         <Form.Control
-          className="border border-primary rounded-left"
+          className="border border-success rounded-left"
           type="text"
           placeholder="Apellido"
           name="lastname"
@@ -41,7 +41,7 @@ const ProfileForm = (props) => {
           Teléfono (opcional):
         </Form.Label>
         <Form.Control
-          className="border border-primary rounded-left"
+          className="border border-success rounded-left"
           type="number"
           placeholder="Ingrese su número de teléfono"
           name="phoneNumber"

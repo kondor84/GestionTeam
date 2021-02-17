@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import BitlogicoImage from "./BitlogicoImage";
-import ProfileForm from "./ProfileForm"
-import SubmitBotton from "./SubmitBotton"
+import ProfileForm from "./ProfileForm";
+import SubmitBotton from "./SubmitBotton";
+import "./css/profile.css"
 const Profile = (props) => {
   const { bitlogico } = props;
   const [updatedBitlogico, setUpdatedBitlogico] = useState(bitlogico);
@@ -44,14 +45,21 @@ const Profile = (props) => {
     }
   };
 
-  const saveUser = () =>{
-      console.log(updatedBitlogico)
-  }
+  const saveUser = () => {
+    console.log(updatedBitlogico);
+  };
   return (
-    <Container>
-        <BitlogicoImage updatedBitlogico={updatedBitlogico} />
-        <ProfileForm handleChange={handleChange} handlechangeimage={handlechangeimage} />
-        <SubmitBotton saveUser={saveUser}/>
+    <Container className="profile-box">
+      <Row className="d-flex justify-content-center align-items-center my-5">
+        <Col sm={12} md={8} xl={6} className="boxPerfil p-4">
+          <BitlogicoImage updatedBitlogico={updatedBitlogico} />
+          <ProfileForm
+            handleChange={handleChange}
+            handlechangeimage={handlechangeimage}
+          />
+          <SubmitBotton saveUser={saveUser} />
+        </Col>
+      </Row>
     </Container>
   );
 };
