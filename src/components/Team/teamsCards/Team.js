@@ -28,7 +28,6 @@ export class Team extends Component {
         {this.state.team.map((member) => (
           <Member
             team={this.state.team}
-            getTeam={this.getTeam}
             member={member}
             key={member.id}
           />

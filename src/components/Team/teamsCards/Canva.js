@@ -34,8 +34,8 @@ export default class Canva extends Component {
       <div>
         <canvas
           id="canva"
-          width="200"
-          height="250"
+          width="288"
+          height="257"
           ref={this.state.canvas}
           onMouseDown={(e) => {
             this.setState({

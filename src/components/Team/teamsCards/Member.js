@@ -7,12 +7,10 @@ export default class Member extends Component {
   constructor(props) {
     super(props);
     this.state = { modal: false, newAmount: 0 };
-    // Este enlace es necesario para hacer que `this` funcione en el callback
     this.handleClick = this.handleClick.bind(this);
     this.showModal = this.showModal.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
-
   showModal() {
     this.setState(() => ({ modal: true }));
   }
@@ -36,21 +34,19 @@ export default class Member extends Component {
           <Canva colour={member.colour} />
           <Card.Body>
             <Card.Title>{member.name}</Card.Title>
-            <Card.Text>
-              {member.role}
-              <Alert
-                className={
-                  member.deuda.amount == 0
-                    ? "alert alert-success my-2"
-                    : "alert alert-primary my-2"
-                }
-              >
-                {member.deuda.amount == 0
-                  ? "No debe facturas"
-                  : `Debe ${member.deuda.amount} docenas de facturas `}{" "}
-                <span>&#129360;</span>
-              </Alert>
-            </Card.Text>
+            <Card.Text>{member.role}</Card.Text>
+            <Alert
+              className={
+                member.deuda.amount == 0
+                  ? "alert alert-success"
+                  : "alert alert-primary"
+              }
+            >
+              {member.deuda.amount == 0
+                ? "No debe facturas"
+                : `Debe ${member.deuda.amount} docenas de facturas `}{" "}
+              <span>&#129360;</span>
+            </Alert>
             <Button onClick={this.showModal} variant="btn btn-outline-success">
               Ver más
             </Button>

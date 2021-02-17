@@ -1,0 +1,10 @@
+{
+    "nombre": "app ramita",
+    "shot_name":"app ramita",
+    "start_url":"/index.html",
+    "display":"standalone",
+    "background-color":"rgb(250,250,250)",
+    "theme-color":"rgb(250,250,250)",
+    "orientation":"portrait"
+
+}

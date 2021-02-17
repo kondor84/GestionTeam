@@ -74,7 +74,7 @@ export default class ModalMember extends Component {
             {" "}
             Cerrar
           </Button>
-          <Button variant="btn btn-outline-success" onClick={() => this.saveToLS(id)}>
+          <Button variant="btn btn-outline-success" onClick={this.saveToLS.bind(this, id)}>
             Guardar cambios
           </Button>
         </Modal.Footer>
