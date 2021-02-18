@@ -45,7 +45,7 @@ const Profile = (props) => {
     }
   };
 
-  const saveUser = () => {
+  const saveChanges = () => {
     console.log(updatedBitlogico);
   };
   return (
@@ -57,7 +57,7 @@ const Profile = (props) => {
             handleChange={handleChange}
             handlechangeimage={handlechangeimage}
           />
-          <SubmitBotton saveUser={saveUser} />
+          <SubmitBotton saveChanges={saveChanges} />
         </Col>
       </Row>
     </Container>
