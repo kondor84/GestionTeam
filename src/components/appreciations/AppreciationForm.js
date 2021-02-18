@@ -5,7 +5,7 @@ const AppreciationForm = (props) => {
   return (
     <Container>
       <Form onSubmit={saveChanges}>
-        <Form.Group className="my-4" controlId="formTelefono">
+        <Form.Group className="my-4" controlId="form-motivo" >
           <Form.Label className="justify-content-start">Motivo</Form.Label>
           <Form.Control
             className="border border-primary rounded-left"

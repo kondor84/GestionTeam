@@ -5,7 +5,7 @@ export default class AppreciationsClass extends Component {
     super(props);
     this.state = {
       appreciation: {
-        id: "23432432",
+        id: "",
         reason: "",
         date: Date.now(),
         id_grateful: "432432",

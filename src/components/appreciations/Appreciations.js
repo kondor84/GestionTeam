@@ -14,8 +14,13 @@ const Appreciations = (props) => {
     });
   };
 
-  const saveChanges = (e) => {
+  const saveChanges = (e, id) => {
+    setAppreciation({
+      ...appreciation,
+      id:id
+    });
     e.preventDefault();
+    //e.preventDefault();
     console.log(appreciation);
   };
 
@@ -25,6 +30,7 @@ const Appreciations = (props) => {
       <Row>
         {teamArray.map((member) => (
           <Cards
+            key={member.id}
             member={member}
             handleChange={handleChange}
             saveChanges={saveChanges}
