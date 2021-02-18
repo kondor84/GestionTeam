@@ -44,8 +44,9 @@ const Profile = (props) => {
       });
     }
   };
-
-  const saveChanges = () => {
+  // to update user, i have to add user's id for the query (i could get it when the user is logged)
+  const saveChanges = (e) => {
+    e.preventDefault();
     console.log(updatedBitlogico);
   };
   return (
@@ -56,6 +57,7 @@ const Profile = (props) => {
           <ProfileForm
             handleChange={handleChange}
             handlechangeimage={handlechangeimage}
+            saveChanges={saveChanges}
           />
           <SubmitBotton saveChanges={saveChanges} />
         </Col>

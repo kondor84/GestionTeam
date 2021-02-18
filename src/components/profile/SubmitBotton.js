@@ -8,7 +8,7 @@ const SubmitBotton = (props) => {
       <Button
         variant="success"
         className="w-100 my-3 text-uppercase "
-        onClick={() => saveChanges()}
+        onClick={(e) => saveChanges(e)}
       >
         Guardar
       </Button>
