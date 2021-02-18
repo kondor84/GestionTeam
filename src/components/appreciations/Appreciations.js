@@ -14,13 +14,14 @@ const Appreciations = (props) => {
     });
   };
 
-  const saveChanges = (e, id) => {
+  const addId = (id) =>{
     setAppreciation({
       ...appreciation,
       id:id
     });
+  }
+  const saveChanges = (e, id) => {
     e.preventDefault();
-    //e.preventDefault();
     console.log(appreciation);
   };
 
@@ -34,6 +35,7 @@ const Appreciations = (props) => {
             member={member}
             handleChange={handleChange}
             saveChanges={saveChanges}
+            addId={addId}
           />
         ))}
       </Row>

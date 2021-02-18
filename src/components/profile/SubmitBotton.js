@@ -3,7 +3,6 @@ import { Button } from "react-bootstrap";
 
 const SubmitBotton = (props) => {
     const {saveChanges, id} = props
-    console.log(id)
   return (
     <div>
       <Button

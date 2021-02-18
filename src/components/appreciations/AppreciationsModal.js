@@ -15,7 +15,7 @@ const AppreciationsModal = (props) => {
       <Modal.Header closeButton>
         <Modal.Title>{name}</Modal.Title>
       </Modal.Header>
-      <AppreciationForm handleChange={handleChange} saveChanges={saveChanges} />
+      <AppreciationForm handleChange={handleChange} saveChanges={saveChanges} id={id} />
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
           Close
