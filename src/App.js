@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import Header from "./components/layout/header/Header";
-import Team from "./components/Team/teamsCards/Team";
+import Team from "./components/team/teamsCards/Team";
 import Footer from "./components/layout/footer/Footer"
 class App extends Component {
   render() {
