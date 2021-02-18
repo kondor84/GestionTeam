@@ -44,14 +44,15 @@ const Profile = (props) => {
     }
   };
 
-  const saveUser = () =>{
+  const saveChanges = (e) =>{
+      e.preventDefault();
       console.log(updatedBitlogico)
   }
   return (
     <Container>
         <BitlogicoImage updatedBitlogico={updatedBitlogico} />
-        <ProfileForm handleChange={handleChange} handlechangeimage={handlechangeimage} />
-        <SubmitBotton saveUser={saveUser}/>
+        <ProfileForm saveChanges={saveChanges} handleChange={handleChange} handlechangeimage={handlechangeimage} />
+        <SubmitBotton saveChanges={saveChanges}/>
     </Container>
   );
 };

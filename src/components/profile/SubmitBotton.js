@@ -2,12 +2,12 @@ import React from "react";
 import { Button } from "react-bootstrap";
 
 const SubmitBotton = (props) => {
-    const {saveUser} = props
+    const {saveChanges} = props
   return (
     <div>
       <Button
         className="w-100 my-3 text-uppercase"
-        onClick={() => saveUser()}
+        onClick={saveChanges}
       >
         Guardar
       </Button>

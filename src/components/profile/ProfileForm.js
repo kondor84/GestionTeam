@@ -2,9 +2,9 @@ import React from "react";
 import { Form } from "react-bootstrap";
 
 const ProfileForm = (props) => {
-  const { handlechangeimage, handleChange } = props;
+  const { handlechangeimage, handleChange, saveChanges } = props;
   return (
-    <Form>
+    <Form onSubmit={saveChanges}>
       <Form.Group className="my-4" controlId="imagen">
         <Form.Label>Foto de perfil</Form.Label>
         <Form.File
