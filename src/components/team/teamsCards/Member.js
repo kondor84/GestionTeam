@@ -31,7 +31,7 @@ export default class Member extends Component {
         className="d-flex justify-content-center align-items-center p-3"
       >
         <Card style={{ width: 18 + "em" }} className="cards-team">
-          <Canva colour={member.colour} />
+          <Canva colour={member.colour} id={member.id}/>
           <Card.Body>
             <Card.Title>{member.name}</Card.Title>
             <Card.Text>{member.role}</Card.Text>

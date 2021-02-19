@@ -21,7 +21,6 @@ export class Team extends Component {
       this.getTeam(dataFromLS);
     }
   }
-
   render() {
     return (
       <Row>
